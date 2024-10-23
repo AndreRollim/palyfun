@@ -86,3 +86,108 @@ body {
     cursor: pointer;
     border-radius: 20px;
 }
+
+main {
+    padding: 24px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #242424;
+    padding: 8px 16px;
+    border-radius: 20px;
+    width: 300px;
+
+}
+
+.search-bar #search {
+    cursor: pointer;
+}
+
+.search-bar input {
+    background-color: transparent;
+    color: #FFF;
+    border: none;
+    width: 100%;
+    margin-left: 10px;
+    outline: none;
+    
+}
+
+.astists-grid, .albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.artist-Card, .album-Card {
+    background-color: #181818;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.artist-Card:hover, .album-Card:hover {
+    background-color: #282828;
+}
+
+.artist-Card img, .album-Card img {
+    width: 100%;
+    max-height: 70%;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.artist-Card h3, .album-Card h3 {
+    font-size: 12px;
+}
+
+.artist-Card p, .album-Card p {
+    font-size: 10px;
+    color: #b7b3b6;
+}
+
+.content {
+    margin-top: 40px;
+}
+
+.content h2 {
+    margin-bottom: 10px;
+}
+
+.banner {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(90deg, #af2896, #509bf5);
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 14px;
+}
+
+.banner h2 {
+    font-size: 14px;
+}
+
+.banner p {
+    font-size: 10px;
+}
+
+.banner button {
+    border-radius: 20px;
+    color: #000;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
